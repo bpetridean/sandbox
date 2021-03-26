@@ -4,7 +4,7 @@
 
     <groupId>org.synnets</groupId>
     <artifactId>sandbox</artifactId>
-    <version>1.0.7</version>
+    <version>1.0.0-dev</version>
     <packaging>pom</packaging>
 
     <name>Generic Sandbox</name>
