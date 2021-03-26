@@ -5,6 +5,8 @@ name: Publish with Maven to Sonatype
 on:
   push:
     branches: [ master ]
+  pull_request:
+    branches: [ master ]
 jobs:
   publish:
     runs-on: ubuntu-latest
