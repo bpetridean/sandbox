@@ -21,4 +21,5 @@ jobs:
     - name: Publish with Maven
       run: ./publish.sh
       env:
-        GITHUB_TOKEN: ${{ github.token }}
+        username: ${{ secrets.SONATYPE_USERNAME }}
+        password: ${{ secrets.SONATYPE_PASSWORD }}
