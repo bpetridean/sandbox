@@ -3,8 +3,6 @@
 
 name: Publish with Maven to Sonatype
 on:
-  push:
-    branches: [ master ]
   pull_request:
     branches: [ master ]
 jobs:
@@ -16,7 +14,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 1.8
-          server-id: veracityMavenReleases
+          server-id: veracityMavenSnapshots
           server-username: SONATYPE_USERNAME
           server-password: SONATYPE_PASSWORD
       - name: Publish Artifact to Sonatype
