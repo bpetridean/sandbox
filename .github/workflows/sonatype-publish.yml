@@ -1,0 +1,24 @@
+# This workflow will publish a Java project with Maven to Sonatype Nexus Repository Manager
+# For more information see: https://docs.github.com/en/actions/guides/publishing-java-packages-with-maven#publishing-packages-to-the-maven-central-repository
+
+name: Publish with Maven to Sonatype
+on:
+  push:
+    branches: [ master ]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Sonatype Nexus Repository Manager
+        uses: actions/setup-java@v1
+        with:
+          java-version: 1.8
+          server-id: veracityMavenReleases
+          server-username: SONATYPE_USERNAME
+          server-password: SONATYPE_PASSWORD
+      - name: Publish Artifact to Sonatype
+        run: ./publish.sh
+        env:
+          SONATYPE_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
+          SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
