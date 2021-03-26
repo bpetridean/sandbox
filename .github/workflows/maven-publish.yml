@@ -24,3 +24,4 @@ jobs:
       with:
         username: ${{ secrets.SONATYPE_USERNAME }}
         password: ${{ secrets.SONATYPE_PASSWORD }}
+        
