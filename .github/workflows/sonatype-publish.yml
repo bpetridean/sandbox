@@ -17,8 +17,13 @@ jobs:
           server-id: veracityMavenSnapshots
           server-username: SONATYPE_USERNAME
           server-password: SONATYPE_PASSWORD
-      - name: Publish Artifact to Sonatype
+      - name: Publish Artifact 1 to Sonatype
         run: ./publish.sh
+        env:
+          SONATYPE_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
+          SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
+      - name: Publish Artifact 2 to Sonatype
+        run: ./publish_.sh
         env:
           SONATYPE_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
           SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
