@@ -1,8 +1,8 @@
 # This workflow will publish a Java project with Maven to Sonatype Nexus Repository Manager
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
-name: Publish with Maven to Sonatype Nexus Repository Manager
-
+name: Publish as Maven Atrifact
+description: Publish with Maven to Sonatype Nexus Repository Manager
 on:
   push:
     branches: [ master ]
@@ -18,8 +18,8 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Publish with Maven
+    - name: Publish Artifact
       run: ./publish.sh
-      env:
-        username: ${{ secrets.SONATYPE_USERNAME }}
-        password: ${{ secrets.SONATYPE_PASSWORD }}
+      with:
+        nexus_username: ${{ secrets.SONATYPE_USERNAME }}
+        nexus_password: ${{ secrets.SONATYPE_PASSWORD }}
