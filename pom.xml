@@ -1,0 +1,80 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.synnets</groupId>
+    <artifactId>sandbox</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>Generic Sandbox</name>
+    <url>https://github.com/sandbox</url>
+    <organization>
+        <name>SynNets</name>
+    </organization>
+    <licenses>
+        <license>
+            <distribution>All Rights Reserved.</distribution>
+        </license>
+    </licenses>
+    <developers>
+        <!-- @developer: add yourself in here -->
+        <developer>
+            <id>bp</id>
+            <name>Bogdan-George Petridean</name>
+            <url>https://www.linkedin.com/in/bogdan-petridean/</url>
+        </developer>
+    </developers>
+    <inceptionYear>2021</inceptionYear>
+
+    <distributionManagement>
+        <repository>
+            <id>veracityMavenReleases</id>
+            <name>VeracityID Maven Releases</name>
+            <url>https://repo.veracityid.com/repository/maven-releases/</url>
+            <layout>default</layout>
+        </repository>
+        <snapshotRepository>
+            <id>veracityMavenSnapshots</id>
+            <name>VeracityID Maven Snapshots</name>
+            <url>https://repo.veracityid.com/repository/maven-snapshots/</url>
+            <layout>default</layout>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <repositories>
+        <repository>
+            <id>veracityMavenReleases</id>
+            <name>VeracityID Maven Releases</name>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+                <updatePolicy>never</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+            <url>https://repo.veracityid.com/repository/maven-releases/</url>
+            <layout>default</layout>
+        </repository>
+        <repository>
+            <id>veracityMavenSnapshots</id>
+            <name>VeracityID Maven Snapshots</name>
+            <releases>
+                <enabled>false</enabled>
+                <updatePolicy>never</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+                <updatePolicy>always</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </snapshots>
+            <url>https://repo.veracityid.com/repository/maven-snapshots/</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+
+</project>
