@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="061106a4-d87b-48c9-a21a-9c922c27a72c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/child/src/main/java/XXX.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/child/publish.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/sonatype-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/sonatype-publish.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/src/main/java/XXX.java" beforeDir="false" afterPath="$PROJECT_DIR$/child/src/main/java/XXX.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +34,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/child" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/child" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/.github" />
     </key>
