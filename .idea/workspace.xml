@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="061106a4-d87b-48c9-a21a-9c922c27a72c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/child/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/child/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/sonatype-publish.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/sonatype-publish.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/target/child-1.0.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/target/classes/XXX.class" beforeDir="false" afterPath="$PROJECT_DIR$/child/target/classes/XXX.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/child/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/publish.sh" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
