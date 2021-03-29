@@ -5,22 +5,12 @@ name: Publish with Maven to Sonatype
 on:
   push:
     branches:
-      # Push events on main branch
-      - master
-      # Push events to branches matching refs/heads/mona/octocat
-      - 'child/src'
+      - 'master/child'
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Cache local Maven repository
-        uses: actions/cache@v2
-        with:
-          path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-maven-
       - name: Setup Sonatype
         uses: actions/setup-java@v1
         with:
