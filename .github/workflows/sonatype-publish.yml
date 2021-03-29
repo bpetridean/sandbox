@@ -21,7 +21,7 @@ jobs:
           server-username: SONATYPE_USERNAME
           server-password: SONATYPE_PASSWORD
       - name: Publish Artifact to Sonatype
-        run: child/./publish.sh
+        run: cd child && ./publish.sh
         env:
           SONATYPE_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
           SONATYPE_PASSWORD: ${{ secrets.SONATYPE_PASSWORD }}
