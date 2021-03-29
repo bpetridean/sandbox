@@ -14,19 +14,4 @@
     <artifactId>child</artifactId>
     <version>1.0.5</version>
 
-    <distributionManagement>
-        <repository>
-            <id>veracityMavenReleases</id>
-            <name>VeracityID Maven Releases</name>
-            <url>https://repo.veracityid.com/repository/maven-releases/</url>
-            <layout>default</layout>
-        </repository>
-        <snapshotRepository>
-            <id>veracityMavenSnapshots</id>
-            <name>VeracityID Maven Snapshots</name>
-            <url>https://repo.veracityid.com/repository/maven-snapshots/</url>
-            <layout>default</layout>
-        </snapshotRepository>
-    </distributionManagement>
-
 </project>
