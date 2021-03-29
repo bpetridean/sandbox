@@ -3,4 +3,4 @@
 
 set -e
 
-mvn --update-snapshots --fail-fast -X clean deploy
+mvn --update-snapshots --fail-fast clean deploy
