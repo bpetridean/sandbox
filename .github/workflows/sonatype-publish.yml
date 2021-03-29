@@ -22,7 +22,7 @@ jobs:
           server-password: SONATYPE_PASSWORD
       - name: Publish Artifact to Sonatype
         run: |
-          cd ~child
+          cd ../../child
           ./publish.sh
         env:
           SONATYPE_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
