@@ -5,9 +5,9 @@ name: Publish with Maven to Sonatype
 on:
   push:
     branches:
-      # Push events on main branch
+      # Push events on master branch
       - master
-      # Push events to branches matching refs/heads/mona/octocat
+      # Push events to branches matching refs/heads/child/
       - 'child/'
 jobs:
   publish:
