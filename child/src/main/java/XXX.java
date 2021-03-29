@@ -2,7 +2,7 @@ public class XXX {
 // wwewewew sdasdsa
 
     public static void main (String[] args) {
-        System.out.println("Just a log...sdsdss");
+        System.out.println("Just a log...sdsdssdsds");
     }
 }
 
