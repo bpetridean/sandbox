@@ -3,8 +3,8 @@
 
 name: wf2
 on:
-  push:
-    branches: [ master ]
+#  push:
+#    branches: [ master ]
   workflow_run:
     workflows: ["wf1"]
     branches: [ master ]
