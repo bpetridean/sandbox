@@ -5,8 +5,6 @@ name: wf2
 on:
   push:
     branches: [ master ]
-    paths:
-      - "child2/**"
     workflow_run:
       workflows: ["wf1"]
       types:
