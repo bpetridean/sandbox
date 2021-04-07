@@ -1,17 +1,12 @@
 # This workflow will publish a Java project with Maven to Sonatype Nexus Repository Manager
 # For more information see: https://docs.github.com/en/actions/guides/publishing-java-packages-with-maven#publishing-packages-to-the-maven-central-repository
 
-name: Publish with Maven to Sonatype
+name: wf1
 on:
   push:
     branches: [ master ]
     paths:
-      - "child2/**"
-    workflow_run:
-      workflows:
-        - Preflight
-      types:
-        - completed
+      - "child/**"
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -26,7 +21,7 @@ jobs:
           server-password: SONATYPE_PASSWORD
       - name: Publish Artifact to Sonatype
         run: |
-          cd child2/
+          cd child/
           ./publish.sh
         env:
           SONATYPE_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
