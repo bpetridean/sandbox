@@ -6,7 +6,12 @@ on:
   push:
     branches: [ master ]
     paths:
-      - "child/**"
+      - "child2/**"
+    workflow_run:
+      workflows:
+        - Preflight
+      types:
+        - completed
 jobs:
   publish:
     runs-on: ubuntu-latest
@@ -21,7 +26,7 @@ jobs:
           server-password: SONATYPE_PASSWORD
       - name: Publish Artifact to Sonatype
         run: |
-          cd child/
+          cd child2/
           ./publish.sh
         env:
           SONATYPE_USERNAME: ${{ secrets.SONATYPE_USERNAME }}
