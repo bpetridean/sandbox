@@ -8,8 +8,7 @@ on:
     paths:
       - "child2/**"
     workflow_run:
-      workflows:
-        - wf1
+      workflows: ["wf1"]
       types:
         - completed
 jobs:

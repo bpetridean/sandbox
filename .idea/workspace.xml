@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="061106a4-d87b-48c9-a21a-9c922c27a72c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/child2/src/main/java/YYY.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/wf2.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/wf2.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/child/src/main/java/XXX.java" beforeDir="false" afterPath="$PROJECT_DIR$/child/src/main/java/XXX.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
