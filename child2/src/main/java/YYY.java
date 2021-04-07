@@ -5,6 +5,6 @@ public class YYY {
     }
 
     public static void main(String[] args){
-        
+
     }
 }
