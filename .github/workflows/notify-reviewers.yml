@@ -1,6 +1,6 @@
 on:
-  pull_request:
-    types: [review_requested]
+  pull_request_review:
+    types: [submitted]
 name: Notify review_requested on Slack
 jobs:
   slackNotification:
