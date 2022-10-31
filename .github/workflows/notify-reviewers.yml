@@ -12,7 +12,6 @@ jobs:
       uses: rtCamp/action-slack-notify@v2
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-        SLACK_CHANNEL: sandbox
         SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
         SLACK_ICON: https://fontawesome.com/icons/code-pull-request-draft?s=solid&f=classic
         SLACK_ICON_EMOJI: ':bell:'
