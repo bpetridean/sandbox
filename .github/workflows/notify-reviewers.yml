@@ -12,7 +12,7 @@ jobs:
       uses: rtCamp/action-slack-notify@v2
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-        SLACK_CHANNEL: '#sandbox'
+        SLACK_CHANNEL: sandbox
         SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
         SLACK_ICON: https://avatars.githubusercontent.com/bpetridean?s=48
         SLACK_MESSAGE: 'Post Content :rocket:'
