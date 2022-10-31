@@ -1,4 +1,6 @@
-on: review_requested
+on:
+  pull_request:
+    types: [review_requested]
 name: Slack Notification Demo#01
 jobs:
   slackNotification:
